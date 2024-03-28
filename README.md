@@ -1,7 +1,8 @@
 # DHCP-MON
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/microshine/dhcp-mon/master/LICENSE)
-[![Coverage Status](https://coveralls.io/repos/github/microshine/dhcp-mon/badge.svg?branch=master)](https://coveralls.io/github/microshine/dhcp-mon?branch=master)
+[![Node.js CI](https://github.com/microshine/dhcp/actions/workflows/test.yml/badge.svg)](https://github.com/microshine/dhcp/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/microshine/dhcp/badge.svg?branch=master)](https://coveralls.io/github/microshine/dhcp?branch=master)
 [![npm version](https://badge.fury.io/js/dhcp-mon.svg)](https://badge.fury.io/js/dhcp-mon)
 
 [![NPM](https://nodei.co/npm/dhcp-mon.png)](https://nodei.co/npm/dhcp-mon/)
