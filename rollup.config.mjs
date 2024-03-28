@@ -1,6 +1,6 @@
-import { dts, ts } from "rollup-plugin-dts";
-
-const pkg = require("./package.json");
+import { dts } from "rollup-plugin-dts";
+import typescript from "rollup-plugin-typescript2";
+import pkg from "./package.json" assert { type: "json" };
 
 const banner = [].join("\n");
 const input = "src/index.ts";
@@ -11,9 +11,14 @@ export default [
   {
     input,
     plugins: [
-      ts({
-        compilerOptions: {
-          removeComments: true,
+      typescript({
+        check: true,
+        clean: true,
+        tsconfigOverride: {
+          compilerOptions: {
+            module: "ES2015",
+            removeComments: true,
+          }
         }
       }),
     ],

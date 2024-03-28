@@ -4,6 +4,7 @@
         "target": "esnext",
         "noImplicitAny": true,
         "strictNullChecks": true,
+        "moduleResolution": "node",
         "sourceMap": false,
         "outDir": "out",
         "importHelpers": true
