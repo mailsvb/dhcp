@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TrustedPlus/dhcp-mon.git"
+    "url": "git+https://github.com/microshine/dhcp-mon.git"
   },
   "keywords": [
     "dhcp",
@@ -51,9 +51,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TrustedPlus/dhcp-mon/issues"
+    "url": "https://github.com/microshine/dhcp-mon/issues"
   },
-  "homepage": "https://github.com/TrustedPlus/dhcp-mon#readme",
+  "homepage": "https://github.com/microshine/dhcp-mon#readme",
   "nyc": {
     "extension": [
       ".ts",
