@@ -1,11 +1,8 @@
 {
   "name": "dhcpd.js",
   "version": "1.0.0",
-  "description": "NodeJS implementation of DHCP server",
+  "description": "NodeJS implementation of a DHCP server",
   "main": "src/index.js",
-  "directories": {
-    "example": "examples"
-  },
   "devDependencies": {
     "@types/mocha": "10.0.8",
     "mocha": "10.7.3",
@@ -19,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microshine/dhcp-mon.git"
+    "url": "git+https://github.com/mailsvb/dhcp.git"
   },
   "keywords": [
     "dhcp",
@@ -37,23 +34,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/microshine/dhcp-mon/issues"
+    "url": "https://github.com/mailsvb/dhcp/issues"
   },
-  "homepage": "https://github.com/microshine/dhcp-mon#readme",
-  "nyc": {
-    "extension": [
-      ".ts",
-      ".tsx"
-    ],
-    "include": [
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "**/*.d.ts"
-    ],
-    "reporter": [
-      "text-summary",
-      "html"
-    ]
-  }
+  "homepage": "https://github.com/mailsvb/dhcp#readme"
 }

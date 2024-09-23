@@ -1,38 +1,28 @@
-# DHCP-MON
+# dhcpd.js
 
-DHCP-MON is a Node.js implementation of a DHCP socket connection. It provides a
+dhcpd.js is a Node.js implementation of a DHCP server. It provides a
 simple and efficient way to handle DHCP events in your network.
 
-[![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/microshine/dhcp-mon/master/LICENSE)
-[![Node.js CI](https://github.com/microshine/dhcp/actions/workflows/test.yml/badge.svg)](https://github.com/microshine/dhcp/actions/workflows/test.yml)
-[![Coverage Status](https://coveralls.io/repos/github/microshine/dhcp/badge.svg?branch=master)](https://coveralls.io/github/microshine/dhcp?branch=master)
+[![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/mailsvb/dhcp/master/LICENSE)
+[![Node.js CI](https://github.com/mailsvb/dhcp/actions/workflows/test.yml/badge.svg)](https://github.com/mailsvb/dhcp/actions/workflows/test.yml)
 [![npm version](https://badge.fury.io/js/dhcp-mon.svg)](https://badge.fury.io/js/dhcp-mon)
 
 [![NPM](https://nodei.co/npm/dhcp-mon.png)](https://nodei.co/npm/dhcp-mon/)
 
 ## Installation
 
-You can install DHCP-MON using npm:
+You can install dhcpd.js using npm:
 
 ```bash
-npm install dhcp-mon
+npm install dhcpd.js
 ```
 
-## Usage
-
-DHCP-MON comes with TypeScript declarations, which can help you understand the
-module API. [See declarations](index.d.ts)
-
-### DHCP Monitor Example
+### Monitor Example
 
 ```javascript
-import { BOOTMessageType, Server } from "dhcp-mon";
+const { Server } = require('dhcpd.js');
 
-const s = new Server("192.168.1.1");
-
-s.on("listening", () => {
-  console.log("Server start", s.address);
-});
+const s = new Server('192.168.1.1');
 
 s.on("dhcp", (e) => {
   console.log(e.packet.debug());
@@ -44,7 +34,7 @@ s.bind();
 ### DHCP Server Example
 
 ```javascript
-import { BOOTMessageType, Server } from "dhcp-mon";
+const { BOOTMessageType, Server } = require('dhcpd.js');
 
 const s = new Server({
   serverId: "192.168.1.1",
