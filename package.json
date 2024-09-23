@@ -1,37 +1,21 @@
 {
-  "name": "dhcp-mon",
-  "version": "1.0.7",
-  "description": "NodeJS implementation of DHCP socket connection",
-  "main": "out/index.js",
-  "module": "out/index.mjs",
-  "types": "out/index.d.ts",
+  "name": "dhcpd.js",
+  "version": "1.0.0",
+  "description": "NodeJS implementation of DHCP server",
+  "main": "src/index.js",
   "directories": {
     "example": "examples"
   },
-  "dependencies": {
-    "rollup-plugin-typescript2": "^0.36.0",
-    "tslib": "^2.6.2"
-  },
   "devDependencies": {
-    "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.30",
-    "coveralls": "^3.1.1",
-    "mocha": "^10.4.0",
-    "nyc": "^15.1.0",
-    "rollup": "^4.13.1",
-    "rollup-plugin-dts": "^6.1.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.3"
+    "@types/mocha": "10.0.8",
+    "mocha": "10.7.3",
+    "ts-node": "10.9.2"
+  },
+  "overrides": {
+    "braces": "3.0.3"
   },
   "scripts": {
-    "prepare": "npm run build",
-    "test": "mocha",
-    "build": "rollup -c",
-    "prepatch": "npm run build",
-    "patch": "npm version patch",
-    "pub": "npm run patch && npm publish && git push",
-    "coverage": "nyc npm test",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -45,8 +29,9 @@
     "client",
     "socket"
   ],
-  "author": "microshine",
+  "author": "mailsvb",
   "contributors": [
+    "mailsvb@gmail.com",
     "Miroshin Stepan<microshine@mail.ru>",
     "Protasova Elena<lendjeina@gmail.com>"
   ],

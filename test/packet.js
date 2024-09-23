@@ -1,6 +1,6 @@
 
-import * as assert from "assert";
-import { Packet } from "../src/packet";
+const assert = require('assert');
+const { Packet } = require ('../src/index.js');
 
 // TODO: add decline
 const vectors = [
@@ -60,7 +60,6 @@ describe("Packet", () => {
 
         it(vector.name + " from buffer to string", () => {
             const packet = Packet.fromBuffer(Buffer.from(vector.hex, "hex"));
-            const pktString = packet.toString();
             const toBuffer = packet.toBuffer();
             assert.equal(toBuffer.toString("hex"), vector.hex);
         });
@@ -76,13 +75,11 @@ describe("Packet", () => {
         it("toBuffer options without end", () => {
             const packet = Packet.fromBuffer(Buffer.from(vectors[0].hex, "hex"));
             packet.options.pop();
-            const toString = packet.toBuffer();
         });
 
         it("toString branch UNKNOWN", () => {
             const packet = Packet.fromBuffer(Buffer.from(vectors[0].hex, "hex"));
             packet.options.shift();
-            const toString = packet.toString();
             packet.toBuffer();
         });
     });

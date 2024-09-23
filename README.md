@@ -35,7 +35,7 @@ s.on("listening", () => {
 });
 
 s.on("dhcp", (e) => {
-  console.log(e.packet.toString());
+  console.log(e.packet.debug());
 });
 
 s.bind();
