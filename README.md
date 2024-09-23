@@ -7,7 +7,7 @@ simple and efficient way to handle DHCP events in your network.
 [![Node.js CI](https://github.com/mailsvb/dhcp/actions/workflows/test.yml/badge.svg)](https://github.com/mailsvb/dhcp/actions/workflows/test.yml)
 [![npm version](https://badge.fury.io/js/dhcp-mon.svg)](https://badge.fury.io/js/dhcp-mon)
 
-[![NPM](https://nodei.co/npm/dhcp-mon.png)](https://nodei.co/npm/dhcp-mon/)
+[![NPM](https://nodei.co/npm/dhcpd.js.png)](https://nodei.co/npm/dhcpd.js/)
 
 ## Installation
 
