@@ -5,7 +5,7 @@ simple and efficient way to handle DHCP events in your network.
 
 [![license](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/mailsvb/dhcp/master/LICENSE)
 [![Node.js CI](https://github.com/mailsvb/dhcp/actions/workflows/test.yml/badge.svg)](https://github.com/mailsvb/dhcp/actions/workflows/test.yml)
-[![npm version](https://badge.fury.io/js/dhcp-mon.svg)](https://badge.fury.io/js/dhcp-mon)
+[![npm version](https://badge.fury.io/js/dhcpd.js.svg)](https://badge.fury.io/js/dhcpd.js)
 
 [![NPM](https://nodei.co/npm/dhcpd.js.png)](https://nodei.co/npm/dhcpd.js/)
 
