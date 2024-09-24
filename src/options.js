@@ -146,6 +146,10 @@ class Option {
                 return TftpServerOption;
             case DHCPOptions.BootFile:
                 return BootFileOption;
+            case DHCPOptions.BroadcastAddress:
+                return BroadcastAddressOption;
+            case DHCPOptions.NtpServers:
+                return NtpServersOption;
             case DHCPOptions.End:
                 return EndOption;
             default:
@@ -295,6 +299,11 @@ class SubnetMaskOption extends IpAddressOption {
         super(DHCPOptions.SubnetMask, data);
     }
 }
+class BroadcastAddressOption extends IpAddressOption {
+    constructor(data) {
+        super(DHCPOptions.BroadcastAddress, data);
+    }
+}
 class AddressTimeOption extends Uint32Option {
     constructor(data) {
         super(DHCPOptions.AddressTime, data);
@@ -363,6 +372,11 @@ class GatewaysOption extends IpAddressListOption {
 class DomainServerOption extends IpAddressListOption {
     constructor(data) {
         super(DHCPOptions.DomainServer, data);
+    }
+}
+class NtpServersOption extends IpAddressListOption {
+    constructor(data) {
+        super(DHCPOptions.NtpServers, data);
     }
 }
 class ClassIdOption extends BufferOption {

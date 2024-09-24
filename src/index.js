@@ -324,6 +324,7 @@ class Server extends Socket {
     createOffer(pkt) {
         const p = new Packet();
         p.op = BOOTMessageType.reply;
+        p.siaddr = this.serverId;
         p.giaddr = pkt.giaddr;
         p.xid = pkt.xid;
         p.flags = pkt.flags;
@@ -347,7 +348,7 @@ class Server extends Socket {
         const p = new Packet();
         p.op = BOOTMessageType.reply;
         p.xid = pkt.xid;
-        p.ciaddr = pkt.giaddr;
+        p.siaddr = this.serverId;
         p.giaddr = pkt.giaddr;
         p.flags = pkt.flags;
         p.chaddr = pkt.chaddr;
